@@ -10,26 +10,29 @@
 <body>
     
     <main>
+        <div id="Tweet">
+            
+            <header>
+                <img id="logo" src="Imagens/twitter-logo.png">
+                <h1>Contador de Caracteres</h1>
+            </header>
+            <section>
+                <textarea id="caixa_de_texto" oninput="contaChars()" placeholder="Digite sua mensagem"></textarea>
+            </section>
+            <section>
+                <label>
+                    Limite:
+                    <input type="radio" name="limite" id="sim" onclick="temLimite()">Sim</input>
+                    <input type="number" id="caixaSecreta" oninput="contaChars()"></input>
+                    <input type="radio" name="limite" id="nao" checked="true" onclick="temLimite()">Não</input>
+                </label>
+            </section>
+            <section id="mostradores">
+                <p id="aviso">Não há limite digitado, usando modo sem limite.</p>
+                <p id="chars_digitados">Não há caracteres digitados.</p>
+            </section>
+        </div>
         <script src="ContadorChars.js"></script>
-        
-        <header>
-            <h1>Contador de Caracteres</h1>
-        </header>
-        <section>
-            <textarea id="caixa_de_texto" oninput="contaChars()"></textarea>
-        </section>
-        <section>
-            <label>
-                Limite:
-                <input type="radio" name="limite" id="sim" onclick="temLimite()">Sim</input>
-                <input type="number" style="display:none" id="caixaSecreta" oninput="contaChars()"></input>
-                <input type="radio" name="limite" id="nao" checked="true" onclick="temLimite()">Não</input>
-            </label>
-        </section>
-        <setcion id="mostradores">
-            <p id="aviso" style="display:none">Não há limite digitado, usando modo sem limite.</p>
-            <p id="chars_digitados">Não há caracteres digitados.</p>
-        </section>
     </main>
 
 </body>

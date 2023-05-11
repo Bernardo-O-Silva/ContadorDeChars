@@ -8,7 +8,7 @@ function contaChars(){
     var valorCaixa = document.getElementById("caixaSecreta").value;
     var contador = document.getElementById("chars_digitados");
     var textoAdd;
-    var cor = "white";
+    var cor = "gray";
 
     valorSim = document.getElementById("sim");
     aviso = document.getElementById("aviso");
@@ -82,7 +82,7 @@ function contaChars(){
 
     contador.innerHTML = textoAdd;
     contador.style.color = cor;
-    cor = "white";
+    cor = "gray";
 
 }
 
